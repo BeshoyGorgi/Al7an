@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Al7an-Tabelle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Al7an</h1>
+
+    <div class="table-container">
+      <table id="meineTabelle">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Hymne</th>
+            <th>Verhalten</th>
+            <th>Anwesenheit (G)</th>
+            <th>Anwesenheit (U)</th>
+            <th>Gesamt</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Für den Test: 
+          <tr>
+            <td>Anna</td>
+            <td>10</td>
+            <td>10</td>
+            <td>15</td>
+            <td>5</td>
+            <td>30</td>
+          </tr> -->
+        </tbody>
+      </table>
+
+      <!-- Plus-Button rechts unten -->
+      <div id="addRow" class="plus-button">+</div>
+
+      <!-- Minus-Button links unten -->
+      <div id="removeColumn" class="minus-button">−</div>
+    </div>
+
+    <!-- Menü für Punkteänderungen -->
+    <div id="punkteMenue" class="hidden">
+      <button data-wert="20">+20</button>
+      <button data-wert="-20">-20</button>
+      <button data-wert="10">+10</button>
+      <button data-wert="-10">-10</button>
+      <button data-wert="5">+5</button>
+      <button data-wert="-5">-5</button>
+    </div>
+
+    <button id="zuDetails" class="link-button">Zu den Kinder-Details</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
